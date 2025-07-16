@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17007021223"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17007021223');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicoterapia Online - Agende sua 1ª Sessão | Thiago Dantas</title>
@@ -20,6 +11,30 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17007021223"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17007021223');
+      
+      function trackWhatsAppConversion(event) {
+        event.preventDefault();
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17007021223/2XGTCNi3jZ4YEK7Z9_0D',
+          'value': 150.00,
+          'currency': 'BRL',
+          'transaction_id': ''
+        });
+        
+        setTimeout(function() {
+          window.location.href = "https://api.whatsapp.com/send/?phone=5579996037276&text=Ol%C3%A1%2C+quero+agendar+uma+consulta&type=phone_number&app_absent=0";
+        }, 500);
+      }
+    </script>
+    
     <style>
         :root {
             --azul-escuro: #1c2464;
@@ -573,15 +588,6 @@
         }
     </style>
 </head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17007021223"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17007021223');
-</script>
 <body>
     <!-- Hero Section -->
     <section class="hero">
@@ -604,7 +610,9 @@
                         </div>
                     </div>
                     
-                    <a href="#" class="btn btn-primary btn-agendar">
+                    <a href="https://api.whatsapp.com/send/?phone=5579996037276&text=Ol%C3%A1%2C+quero+agendar+uma+consulta&type=phone_number&app_absent=0" 
+                       class="btn btn-primary btn-agendar"
+                       onclick="trackWhatsAppConversion(event)">
                         <i class="fab fa-whatsapp"></i> AGENDAR CONSULTA
                     </a>
                 </div>
@@ -616,7 +624,7 @@
         </div>
     </section>
 
-    <!-- Oferta Especial - AGORA COM ID #sessao-hoje -->
+    <!-- Oferta Especial -->
     <section id="sessao-hoje" class="container">
         <div class="offer-section">
             <div class="offer-badge">Sessão Hoje</div>
@@ -649,7 +657,9 @@
                 </div>
             </div>
             
-            <a href="#" class="btn btn-primary btn-agendar">
+            <a href="https://api.whatsapp.com/send/?phone=5579996037276&text=Ol%C3%A1%2C+quero+agendar+uma+consulta&type=phone_number&app_absent=0" 
+               class="btn btn-primary btn-agendar"
+               onclick="trackWhatsAppConversion(event)">
                 <i class="fab fa-whatsapp"></i> QUERO MINHA SESSÃO ESPECIAL
             </a>
             
@@ -659,7 +669,7 @@
         </div>
     </section>
 
-    <!-- Depoimentos - AGORA COM ID #depoimentos -->
+    <!-- Depoimentos -->
     <section id="depoimentos" class="testimonials">
         <div class="container">
             <h2 class="section-title">O que dizem meus pacientes</h2>
@@ -676,7 +686,7 @@
         </div>
     </section>
 
-    <!-- Perguntas Frequentes - AGORA COM ID #duvidas -->
+    <!-- Perguntas Frequentes -->
     <section id="duvidas" class="container faq-section">
         <h2 class="section-title">Perguntas Frequentes</h2>
         
@@ -722,12 +732,14 @@
         <h2 style="font-size: 2rem; color: var(--azul-escuro); margin-bottom: 1.5rem;">Pronto para dar o primeiro passo?</h2>
         <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem;">Agende agora mesmo sua primeira sessão com condição especial</p>
         
-        <a href="#" class="btn btn-primary btn-agendar">
+        <a href="https://api.whatsapp.com/send/?phone=5579996037276&text=Ol%C3%A1%2C+quero+agendar+uma+consulta&type=phone_number&app_absent=0" 
+           class="btn btn-primary btn-agendar"
+           onclick="trackWhatsAppConversion(event)">
             <i class="fab fa-whatsapp"></i> AGENDAR MINHA SESSÃO
         </a>
     </section>
 
-    <!-- Modal de Informações - AGORA COM ID #valores -->
+    <!-- Modal de Informações -->
     <div id="valores" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
@@ -747,7 +759,8 @@
                 </li>
             </ul>
             <a href="https://api.whatsapp.com/send/?phone=5579996037276&text=Ol%C3%A1%2C+quero+agendar+uma+consulta&type=phone_number&app_absent=0" 
-               class="btn btn-primary btn-modal">
+               class="btn btn-primary btn-modal"
+               onclick="trackWhatsAppConversion(event)">
                 Continuar para o WhatsApp
             </a>
         </div>
@@ -780,7 +793,9 @@
     </footer>
 
     <!-- Botão flutuante do WhatsApp -->
-    <a href="#" class="whatsapp-float btn-agendar">
+    <a href="https://api.whatsapp.com/send/?phone=5579996037276&text=Ol%C3%A1%2C+quero+agendar+uma+consulta&type=phone_number&app_absent=0" 
+       class="whatsapp-float btn-agendar"
+       onclick="trackWhatsAppConversion(event)">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -793,7 +808,7 @@
             });
         });
         
-        // Contador de oferta (opcional)
+        // Contador de oferta
         let count = 15;
         const counterElement = document.createElement('div');
         counterElement.innerHTML = `<p style="margin-top: 15px; color: var(--destaque); font-weight: bold;">
@@ -809,16 +824,10 @@
         // Abrir modal quando clicar em qualquer botão de agendamento
         agendarBtns.forEach(btn => {
             btn.addEventListener("click", function(e) {
+                if(btn.classList.contains('btn-modal')) return;
                 e.preventDefault();
                 modal.style.display = "block";
             });
-        });
-        
-        // Botão flutuante também abre o modal
-        const whatsappBtn = document.querySelector(".whatsapp-float");
-        whatsappBtn.addEventListener("click", function(e) {
-            e.preventDefault();
-            modal.style.display = "block";
         });
         
         // Fechar modal quando clicar no X
@@ -834,14 +843,14 @@
         }
         
         // Diminuir contador quando alguém clica no botão do modal
-        document.querySelector('.btn-modal').addEventListener('click', () => {
+        document.querySelector('.btn-modal').addEventListener('click', function(e) {
             if(count > 0) count--;
             counterElement.innerHTML = `<p style="margin-top: 15px; color: var(--destaque); font-weight: bold;">
                 <i class="fas fa-bolt"></i> Ofertas restantes hoje: ${count}
             </p>`;
         });
         
-        // Scroll suave para a oferta (ATUALIZADO para #sessao-hoje)
+        // Scroll suave para a oferta
         document.querySelector('a[href="#sessao-hoje"]').addEventListener('click', function(e) {
             e.preventDefault();
             document.querySelector('#sessao-hoje').scrollIntoView({
