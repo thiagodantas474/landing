@@ -1,40 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-</head>
-<body>
-    <!-- Hero Section (mantido sem ID pois não será usado em sitelinks) -->
-    <section class="hero">
-        <!-- ... conteúdo hero ... -->
-    </section>
-
-    <!-- Oferta Especial - AGORA COM ID #oferta -->
-    <section id="sessaohoje" class="offer-section">  <!-- ALTERAÇÃO: ID ADICIONADO -->
-        <div class="container">
-            <!-- ... conteúdo offer-section ... -->
-        </div>
-    </section>
-
-    <!-- Depoimentos - AGORA COM ID #depoimentos -->
-    <section id="depoimentos" class="testimonials">  <!-- ALTERAÇÃO: ID ADICIONADO -->
-        <div class="container">
-            <!-- ... conteúdo testimonials ... -->
-        </div>
-    </section>
-
-    <!-- Perguntas Frequentes - AGORA COM ID #duvidas -->
-    <section id="duvidas" class="container faq-section">  <!-- ALTERAÇÃO: ID ADICIONADO -->
-        <h2 class="section-title">Perguntas Frequentes</h2>
-        <!-- ... conteúdo faq ... -->
-    </section>
-
-    <!-- Modal de Informações - AGORA COM ID #valores -->
-    <div id="valores" class="modal">  <!-- ALTERAÇÃO: ID ADICIONADO -->
-        <!-- ... conteúdo modal ... -->
-    </div>
-
-    <!-- ... (restante do código permanece igual) ... -->
-</body>
-</html>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicoterapia Online - Agende sua 1ª Sessão | Thiago Dantas</title>
@@ -632,8 +598,8 @@
         </div>
     </section>
 
-    <!-- Sessão Hoje -->
-    <section id="offer" class="container">
+    <!-- Oferta Especial - AGORA COM ID #sessao-hoje -->
+    <section id="sessao-hoje" class="container">
         <div class="offer-section">
             <div class="offer-badge">Sessão Hoje</div>
             <h2 class="offer-title">Primeira Sessão Hoje Mesmo</h2>
@@ -675,8 +641,8 @@
         </div>
     </section>
 
-    <!-- Depoimentos -->
-    <section class="testimonials">
+    <!-- Depoimentos - AGORA COM ID #depoimentos -->
+    <section id="depoimentos" class="testimonials">
         <div class="container">
             <h2 class="section-title">O que dizem meus pacientes</h2>
             
@@ -692,8 +658,8 @@
         </div>
     </section>
 
-    <!-- Perguntas Frequentes -->
-    <section class="container faq-section">
+    <!-- Perguntas Frequentes - AGORA COM ID #duvidas -->
+    <section id="duvidas" class="container faq-section">
         <h2 class="section-title">Perguntas Frequentes</h2>
         
         <div class="faq-item">
@@ -743,8 +709,8 @@
         </a>
     </section>
 
-    <!-- Modal de Informações -->
-    <div id="infoModal" class="modal">
+    <!-- Modal de Informações - AGORA COM ID #valores -->
+    <div id="valores" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <h2 class="modal-title">Antes de agendar, saiba que:</h2>
@@ -818,7 +784,7 @@
         document.querySelector('.offer-section').appendChild(counterElement);
         
         // Modal de Informações
-        const modal = document.getElementById("infoModal");
+        const modal = document.getElementById("valores");
         const agendarBtns = document.querySelectorAll(".btn-agendar");
         const closeModal = document.querySelector(".close-modal");
         
@@ -857,10 +823,10 @@
             </p>`;
         });
         
-        // Scroll suave para a oferta
-        document.querySelector('a[href="#offer"]').addEventListener('click', function(e) {
+        // Scroll suave para a oferta (ATUALIZADO para #sessao-hoje)
+        document.querySelector('a[href="#sessao-hoje"]').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#offer').scrollIntoView({
+            document.querySelector('#sessao-hoje').scrollIntoView({
                 behavior: 'smooth'
             });
         });
