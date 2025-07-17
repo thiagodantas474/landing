@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicoterapia Online - Agende sua 1ª Sessão | Thiago Dantas</title>
     <meta name="description" content="Agende sua 1ª sessão de psicoterapia online com Thiago Dantas. Supere o nervosismo, desânimo e melhore seus relacionamentos. Atendimento em todo Brasil.">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="sm.png" type="image/png">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJV4TTTL');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Ads Conversion Code -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17007021223"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -22,18 +24,31 @@
       
       function trackWhatsAppConversion(event) {
         event.preventDefault();
+        
+        // Dispara a conversão do Google Ads
         gtag('event', 'conversion', {
           'send_to': 'AW-17007021223/2XGTCNi3jZ4YEK7Z9_0D',
           'value': 150.00,
           'currency': 'BRL',
           'transaction_id': ''
         });
+
+        // Dispara um evento no GTM (opcional)
+        window.dataLayer.push({
+          'event': 'whatsapp_conversion'
+        });
         
         setTimeout(function() {
-          window.location.href = "https://api.whatsapp.com/send/?phone=5579996037276&text=Ol%C3%A1%2C+quero+agendar+uma+consulta&type=phone_number&app_absent=0";
+          window.location.href = event.target.href;
         }, 500);
       }
     </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="sm.png" type="image/png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -589,6 +604,11 @@
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJV4TTTL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
