@@ -14,34 +14,15 @@
     })(window,document,'script','dataLayer','GTM-MJV4TTTL');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- Google Ads Conversion Code -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17007021223"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-17007021223');
-      
-      function trackWhatsAppConversion(event) {
-        event.preventDefault();
-        
-        // Dispara a conversão do Google Ads
-        gtag('event', 'conversion', {
-          'send_to': 'AW-17007021223/2XGTCNi3jZ4YEK7Z9_0D',
-          'value': 150.00,
-          'currency': 'BRL',
-          'transaction_id': ''
-        });
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JRTC3VCW2D">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        // Dispara um evento no GTM (opcional)
-        window.dataLayer.push({
-          'event': 'whatsapp_conversion'
-        });
-        
-        setTimeout(function() {
-          window.location.href = event.target.href;
-        }, 500);
-      }
+  gtag('config', 'G-JRTC3VCW2D');
     </script>
     
     <!-- Favicon -->
