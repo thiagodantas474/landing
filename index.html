@@ -607,7 +607,7 @@
         </div>
     </section>
 
-    <!-- Oferta Especial - AGORA COM ID #sessao-hoje -->
+    <!-- Oferta Especial -->
     <section id="sessao-hoje" class="container">
         <div class="offer-section">
             <div class="offer-badge">Sessão Hoje</div>
@@ -650,7 +650,7 @@
         </div>
     </section>
 
-    <!-- Depoimentos - AGORA COM ID #depoimentos -->
+    <!-- Depoimentos -->
     <section id="depoimentos" class="testimonials">
         <div class="container">
             <h2 class="section-title">O que dizem meus pacientes</h2>
@@ -667,7 +667,7 @@
         </div>
     </section>
 
-    <!-- Perguntas Frequentes - AGORA COM ID #duvidas -->
+    <!-- Perguntas Frequentes -->
     <section id="duvidas" class="container faq-section">
         <h2 class="section-title">Perguntas Frequentes</h2>
         
@@ -718,7 +718,7 @@
         </a>
     </section>
 
-    <!-- Modal de Informações - AGORA COM ID #valores -->
+    <!-- Modal de Informações -->
     <div id="valores" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
@@ -824,15 +824,32 @@
             }
         }
         
-        // Diminuir contador quando alguém clica no botão do modal
-        document.querySelector('.btn-modal').addEventListener('click', () => {
+        // ✅ Configuração de conversão do Google Ads (botão final do WhatsApp)
+        document.querySelector('.btn-modal').addEventListener('click', function(e) {
+            // 1. Previne o comportamento padrão
+            e.preventDefault();
+            
+            // 2. Dispara a conversão
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17007021223/TCPCPCTx_MaEKeZyq0_',
+                'value': 1.0,
+                'currency': 'BRL',
+                'transaction_id': ''
+            });
+            
+            // 3. Redireciona após 300ms (garantindo o registro)
+            setTimeout(() => {
+                window.location.href = this.href;
+            }, 300);
+            
+            // 4. Atualiza contador (opcional)
             if(count > 0) count--;
             counterElement.innerHTML = `<p style="margin-top: 15px; color: var(--destaque); font-weight: bold;">
                 <i class="fas fa-bolt"></i> Ofertas restantes hoje: ${count}
             </p>`;
         });
         
-        // Scroll suave para a oferta (ATUALIZADO para #sessao-hoje)
+        // Scroll suave para a oferta
         document.querySelector('a[href="#sessao-hoje"]').addEventListener('click', function(e) {
             e.preventDefault();
             document.querySelector('#sessao-hoje').scrollIntoView({
