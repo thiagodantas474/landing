@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicoterapia Online - Agende sua 1ª Sessão | Thiago Dantas</title>
     <meta name="description" content="Agende sua 1ª sessão de psicoterapia online com Thiago Dantas. Supere o nervosismo, desânimo e melhore seus relacionamentos. Atendimento em todo Brasil.">
-    
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17007021223"></script>
     <script>
@@ -14,10 +14,10 @@
       gtag('js', new Date());
       gtag('config', 'AW-17007021223');
     </script>
-    
+
     <!-- Favicon -->
     <link rel="icon" href="sm.png" type="image/png">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -28,13 +28,13 @@
             --verde-whatsapp: #25D366;
             --destaque: #ff6b6b;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Nunito', sans-serif;
             line-height: 1.6;
@@ -42,19 +42,19 @@
             background: linear-gradient(to bottom, #f8f8ff, #e6e9ff);
             min-height: 100vh;
         }
-        
+
         h1, h2, h3 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
         }
-        
+
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--azul-escuro) 0%, var(--azul-claro) 100%);
@@ -66,7 +66,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .hero::before {
             content: '';
             position: absolute;
@@ -76,7 +76,7 @@
             height: 100%;
             background: radial-gradient(circle at top right, rgba(255,255,255,0.1) 0%, transparent 20%);
         }
-        
+
         .hero-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -85,35 +85,35 @@
             position: relative;
             z-index: 2;
         }
-        
+
         .hero-content {
             padding-right: 20px;
         }
-        
+
         .hero-logo {
             text-align: left;
             margin-bottom: 1.5rem;
         }
-        
+
         .hero-logo img {
             height: 250px;
             width: auto;
         }
-        
+
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
             line-height: 1.2;
             text-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
-        
+
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 1.5rem;
             max-width: 600px;
             font-weight: 400;
         }
-        
+
         .hero-info {
             display: flex;
             gap: 1.5rem;
@@ -121,7 +121,7 @@
             margin-bottom: 2rem;
             flex-wrap: wrap;
         }
-        
+
         .info-item {
             display: flex;
             align-items: center;
@@ -133,14 +133,14 @@
             font-weight: 600;
             font-size: 0.95rem;
         }
-        
+
         .hero-image {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100%;
         }
-        
+
         .hero-image img {
             width: 100%;
             max-width: 380px;
@@ -149,7 +149,7 @@
             box-shadow: 0 15px 30px rgba(0,0,0,0.3);
             border: 4px solid rgba(255,255,255,0.3);
         }
-        
+
         .btn {
             display: inline-block;
             padding: 15px 35px;
@@ -166,20 +166,20 @@
             width: 100%;
             max-width: 400px;
         }
-        
+
         .btn-primary {
             background-color: var(--verde-whatsapp);
             color: white;
             font-size: 1.3rem;
             padding: 18px 30px;
         }
-        
+
         .btn-primary:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
             background-color: #20c05a;
         }
-        
+
         .offer-section {
             background: white;
             border-radius: 20px;
@@ -190,7 +190,7 @@
             max-width: 800px;
             border: 2px dashed var(--azul-claro);
         }
-        
+
         .offer-badge {
             background: var(--destaque);
             color: white;
@@ -202,26 +202,26 @@
             font-size: 1.1rem;
             animation: pulse 2s infinite;
         }
-        
+
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
-        
+
         .offer-title {
             color: var(--azul-escuro);
             font-size: 2rem;
             margin-bottom: 1rem;
         }
-        
+
         .benefits-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
             margin: 2.5rem 0;
         }
-        
+
         .benefit-card {
             background: rgba(241, 243, 255, 0.6);
             border-radius: 15px;
@@ -229,25 +229,25 @@
             text-align: center;
             transition: all 0.3s ease;
         }
-        
+
         .benefit-card:hover {
             transform: translateY(-8px);
             background: white;
             box-shadow: 0 8px 25px rgba(0,0,0,0.08);
         }
-        
+
         .benefit-icon {
             font-size: 2.5rem;
             color: var(--azul-claro);
             margin-bottom: 1rem;
         }
-        
+
         .benefit-card h3 {
             color: var(--azul-escuro);
             margin-bottom: 1rem;
             font-size: 1.3rem;
         }
-        
+
         .testimonials {
             background: var(--azul-escuro);
             color: white;
@@ -255,14 +255,14 @@
             border-radius: 20px;
             margin: 3rem 0;
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 2rem;
             font-size: 2.2rem;
             position: relative;
         }
-        
+
         .section-title::after {
             content: '';
             display: block;
@@ -272,7 +272,7 @@
             margin: 15px auto;
             border-radius: 2px;
         }
-        
+
         .testimonial-card {
             background: rgba(255,255,255,0.08);
             border-radius: 15px;
@@ -281,7 +281,7 @@
             max-width: 700px;
             position: relative;
         }
-        
+
         .testimonial-card::before {
             content: '"';
             position: absolute;
@@ -292,7 +292,7 @@
             font-family: serif;
             line-height: 1;
         }
-        
+
         .testimonial-text {
             font-style: italic;
             margin-bottom: 1.5rem;
@@ -301,18 +301,18 @@
             font-size: 1.1rem;
             line-height: 1.7;
         }
-        
+
         .testimonial-author {
             font-weight: 700;
             color: white;
             text-align: right;
             font-size: 1.1rem;
         }
-        
+
         .faq-section {
             margin: 3rem 0;
         }
-        
+
         .faq-item {
             background: white;
             border-radius: 15px;
@@ -320,7 +320,7 @@
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
-        
+
         .faq-question {
             padding: 1.5rem;
             background: var(--azul-escuro);
@@ -331,24 +331,24 @@
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .faq-answer {
             padding: 1.5rem;
             display: none;
         }
-        
+
         .faq-question i {
             transition: transform 0.3s ease;
         }
-        
+
         .faq-item.active .faq-answer {
             display: block;
         }
-        
+
         .faq-item.active .faq-question i {
             transform: rotate(180deg);
         }
-        
+
         .footer {
             background: var(--azul-escuro);
             color: white;
@@ -357,45 +357,45 @@
             border-radius: 20px 20px 0 0;
             margin-top: 3rem;
         }
-        
+
         .footer-logo img {
             height: 100px;
             width: auto;
             margin-bottom: 1.5rem;
         }
-        
+
         .footer-info {
             margin: 1.5rem 0;
             line-height: 1.8;
         }
-        
+
         .footer-info p {
             margin: 0.5rem 0;
         }
-        
+
         .social-icons {
             display: flex;
             gap: 1.5rem;
             justify-content: center;
             margin: 1.5rem 0;
         }
-        
+
         .social-icons a {
             color: white;
             font-size: 1.8rem;
             transition: transform 0.3s ease;
         }
-        
+
         .social-icons a:hover {
             transform: translateY(-5px);
         }
-        
+
         .copyright {
             margin-top: 1.5rem;
             color: rgba(255,255,255,0.7);
             font-size: 0.95rem;
         }
-        
+
         .whatsapp-float {
             position: fixed;
             bottom: 25px;
@@ -415,12 +415,12 @@
             text-decoration: none;
             transition: all 0.3s ease;
         }
-        
+
         .whatsapp-float:hover {
             transform: scale(1.1);
             animation: none;
         }
-        
+
         /* Modal de Informações */
         .modal {
             display: none;
@@ -433,7 +433,7 @@
             overflow: auto;
             background-color: rgba(0,0,0,0.5);
         }
-        
+
         .modal-content {
             background-color: #fefefe;
             margin: 10% auto;
@@ -443,7 +443,7 @@
             box-shadow: 0 5px 20px rgba(0,0,0,0.3);
             position: relative;
         }
-        
+
         .close-modal {
             color: #aaa;
             position: absolute;
@@ -453,40 +453,40 @@
             font-weight: bold;
             cursor: pointer;
         }
-        
+
         .close-modal:hover,
         .close-modal:focus {
             color: #000;
             text-decoration: none;
         }
-        
+
         .modal-title {
             color: var(--azul-escuro);
             margin-bottom: 20px;
             text-align: center;
         }
-        
+
         .modal-info {
             list-style: none;
             margin-bottom: 25px;
         }
-        
+
         .modal-info li {
             padding: 10px 0;
             display: flex;
             align-items: flex-start;
             gap: 10px;
         }
-        
+
         .modal-info li i {
             color: var(--verde-whatsapp);
             font-size: 1.4rem;
         }
-        
+
         .modal-info li strong {
             font-size: 1.1rem;
         }
-        
+
         .btn-modal {
             display: block;
             text-align: center;
@@ -495,78 +495,78 @@
             max-width: 300px;
             padding: 12px 20px;
         }
-        
+
         /* Responsividade */
         @media (max-width: 992px) {
             .hero-grid {
                 grid-template-columns: 1fr;
                 text-align: center;
             }
-            
+
             .hero-content {
                 padding-right: 0;
             }
-            
+
             .hero-logo {
                 text-align: center;
             }
-            
+
             .hero-info {
                 justify-content: center;
             }
-            
+
             .hero h1 {
                 font-size: 2.2rem;
             }
         }
-        
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
             }
-            
+
             .hero p {
                 font-size: 1.1rem;
             }
-            
+
             .offer-title {
                 font-size: 1.8rem;
             }
-            
+
             .section-title {
                 font-size: 1.8rem;
             }
-            
+
             .btn-primary {
                 font-size: 1.2rem;
                 padding: 15px 25px;
             }
-            
+
             .modal-content {
                 padding: 20px;
                 margin: 20% auto;
                 width: 90%;
             }
         }
-        
+
         @media (max-width: 480px) {
             .hero {
                 padding: 2rem 0;
             }
-            
+
             .hero h1 {
                 font-size: 1.8rem;
             }
-            
+
             .hero-logo img {
                 height: 80px;
             }
-            
+
             .info-item {
                 width: 100%;
                 justify-content: center;
             }
-            
+
             .offer-section {
                 padding: 1.5rem;
             }
@@ -582,10 +582,10 @@
                     <div class="hero-logo">
                         <img src="Logo-perto-com-CRP.png" alt="Psicólogo Thiago Dantas">
                     </div>
-                    
+
                     <h1>Terapia online para bem-estar emocional</h1>
                     <p>Sessões individuais para lidar com o nervosismo, o desânimo e construir uma vida com propósito e coragem</p>
-                    
+
                     <div class="hero-info">
                         <div class="info-item">
                             <i class="fas fa-video"></i> Atendimento Online (Todo Brasil)
@@ -594,12 +594,12 @@
                             <i class="fas fa-clock"></i> Agendamento Flexível
                         </div>
                     </div>
-                    
+
                     <a href="#" class="btn btn-primary btn-agendar">
                         <i class="fab fa-whatsapp"></i> AGENDAR CONSULTA
                     </a>
                 </div>
-                
+
                 <div class="hero-image">
                     <img src="foto_grande.jpg" alt="Thiago Dantas - Psicólogo">
                 </div>
@@ -607,13 +607,14 @@
         </div>
     </section>
 
+    <!-- Oferta Especial - AGORA COM ID #sessao-hoje -->
     <!-- Oferta Especial -->
     <section id="sessao-hoje" class="container">
         <div class="offer-section">
             <div class="offer-badge">Sessão Hoje</div>
             <h2 class="offer-title">Primeira Sessão Hoje Mesmo</h2>
             <p>Experimente a psicoterapia online com um investimento especial para sua primeira sessão</p>
-            
+
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <div class="benefit-icon">
@@ -622,7 +623,7 @@
                     <h3>Sessão Online</h3>
                     <p>Conforto da sua casa, sem deslocamento</p>
                 </div>
-                
+
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-user-clock"></i>
@@ -630,7 +631,7 @@
                     <h3>50 Minutos</h3>
                     <p>Tempo ideal para um atendimento de qualidade</p>
                 </div>
-                
+
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-hand-holding-heart"></i>
@@ -639,27 +640,28 @@
                     <p>Escuta especializada sem julgamentos</p>
                 </div>
             </div>
-            
+
             <a href="#" class="btn btn-primary btn-agendar">
                 <i class="fab fa-whatsapp"></i> QUERO MINHA SESSÃO ESPECIAL
             </a>
-            
+
             <p style="margin-top: 15px; font-size: 0.9rem; color: #666;">
                 <i class="fas fa-shield-alt"></i> Ambiente confidencial e seguro
             </p>
         </div>
     </section>
 
+    <!-- Depoimentos - AGORA COM ID #depoimentos -->
     <!-- Depoimentos -->
     <section id="depoimentos" class="testimonials">
         <div class="container">
             <h2 class="section-title">O que dizem meus pacientes</h2>
-            
+
             <div class="testimonial-card">
                 <p class="testimonial-text">"Thiago é um ótimo profissional. Além de atencioso e acolhedor, conduz a sessão de forma leve e descontraída. Super recomendo!"</p>
                 <p class="testimonial-author">- Pedro R., 28 anos</p>
             </div>
-            
+
             <div class="testimonial-card">
                 <p class="testimonial-text">"Tive uma experiência incrível. Profissional empático e competente. Sua escuta ativa fez toda diferença no meu processo de autoconhecimento."</p>
                 <p class="testimonial-author">- Mariana S., 35 anos</p>
@@ -667,10 +669,11 @@
         </div>
     </section>
 
+    <!-- Perguntas Frequentes - AGORA COM ID #duvidas -->
     <!-- Perguntas Frequentes -->
     <section id="duvidas" class="container faq-section">
         <h2 class="section-title">Perguntas Frequentes</h2>
-        
+
         <div class="faq-item">
             <div class="faq-question">
                 Como funciona a terapia online? <i class="fas fa-chevron-down"></i>
@@ -679,7 +682,7 @@
                 <p>A terapia online acontece por videoconferência em tempo real, com a mesma qualidade do atendimento presencial. Você receberá um link seguro para acessar a sessão no horário agendado, podendo participar de qualquer lugar com internet.</p>
             </div>
         </div>
-        
+
         <div class="faq-item">
             <div class="faq-question">
                 Quanto tempo dura cada sessão? <i class="fas fa-chevron-down"></i>
@@ -688,7 +691,7 @@
                 <p>Cada sessão tem duração de 50 minutos, tempo ideal para um trabalho terapêutico eficaz. A frequência geralmente é semanal, mas pode ser ajustada conforme suas necessidades.</p>
             </div>
         </div>
-        
+
         <div class="faq-item">
             <div class="faq-question">
                 Preciso de algum equipamento especial? <i class="fas fa-chevron-down"></i>
@@ -697,7 +700,7 @@
                 <p>Apenas um dispositivo (celular, tablet ou computador) com câmera, microfone e conexão à internet. Não é necessário instalar nenhum software especial.</p>
             </div>
         </div>
-        
+
         <div class="faq-item">
             <div class="faq-question">
                 Como é o processo de agendamento? <i class="fas fa-chevron-down"></i>
@@ -712,12 +715,13 @@
     <section class="container" style="text-align: center; margin: 4rem auto;">
         <h2 style="font-size: 2rem; color: var(--azul-escuro); margin-bottom: 1.5rem;">Pronto para dar o primeiro passo?</h2>
         <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem;">Agende agora mesmo sua primeira sessão com condição especial</p>
-        
+
         <a href="#" class="btn btn-primary btn-agendar">
             <i class="fab fa-whatsapp"></i> AGENDAR MINHA SESSÃO
         </a>
     </section>
 
+    <!-- Modal de Informações - AGORA COM ID #valores -->
     <!-- Modal de Informações -->
     <div id="valores" class="modal">
         <div class="modal-content">
@@ -750,20 +754,20 @@
             <div class="footer-logo">
                 <img src="Logo-perto-com-CRP.png" alt="Psicólogo Thiago Dantas">
             </div>
-            
+
             <div class="footer-info">
                 <p><i class="fas fa-phone"></i> (79) 99603-7276</p>
                 <p><i class="fas fa-envelope"></i> psithiagodantas@gmail.com</p>
                 <p><i class="fas fa-map-marker-alt"></i> Atendimento Online - Todo Brasil</p>
                 <p>CRP: 19/004658</p>
             </div>
-            
+
             <div class="social-icons">
                 <a href="https://www.instagram.com/psi.thiagodantas" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
-            
+
             <div class="copyright">
                 © 2023 Psicólogo Thiago Dantas. Todos os direitos reservados.
             </div>
@@ -783,7 +787,7 @@
                 item.classList.toggle('active');
             });
         });
-        
+
         // Contador de oferta (opcional)
         let count = 15;
         const counterElement = document.createElement('div');
@@ -791,12 +795,12 @@
             <i class="fas fa-bolt"></i> Ofertas restantes hoje: ${count}
         </p>`;
         document.querySelector('.offer-section').appendChild(counterElement);
-        
+
         // Modal de Informações
         const modal = document.getElementById("valores");
         const agendarBtns = document.querySelectorAll(".btn-agendar");
         const closeModal = document.querySelector(".close-modal");
-        
+
         // Abrir modal quando clicar em qualquer botão de agendamento
         agendarBtns.forEach(btn => {
             btn.addEventListener("click", function(e) {
@@ -804,26 +808,28 @@
                 modal.style.display = "block";
             });
         });
-        
+
         // Botão flutuante também abre o modal
         const whatsappBtn = document.querySelector(".whatsapp-float");
         whatsappBtn.addEventListener("click", function(e) {
             e.preventDefault();
             modal.style.display = "block";
         });
-        
+
         // Fechar modal quando clicar no X
         closeModal.onclick = function() {
             modal.style.display = "none";
         }
-        
+
         // Fechar modal quando clicar fora dele
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
         }
-        
+
+        // Diminuir contador quando alguém clica no botão do modal
+        document.querySelector('.btn-modal').addEventListener('click', () => {
         // ✅ Configuração de conversão do Google Ads (botão final do WhatsApp)
         document.querySelector('.btn-modal').addEventListener('click', function(e) {
             // 1. Previne o comportamento padrão
@@ -848,7 +854,8 @@
                 <i class="fas fa-bolt"></i> Ofertas restantes hoje: ${count}
             </p>`;
         });
-        
+
+        // Scroll suave para a oferta (ATUALIZADO para #sessao-hoje)
         // Scroll suave para a oferta
         document.querySelector('a[href="#sessao-hoje"]').addEventListener('click', function(e) {
             e.preventDefault();
