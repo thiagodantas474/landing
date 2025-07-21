@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Google tag (gtag.js) - Mantido apenas para Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRTC3VCW2D"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-JRTC3VCW2D');
-    </script>
-    
-    <!-- Google Ads Conversion Tracking - Adicionado manualmente -->
-    <script>
-      function gtag_report_conversion(url) {
-        gtag('event', 'conversion', {
-          'send_to': 'AW-17007021223/wi9RCJmWw_MaEKeZyq0_',
-          'value': 1.0,
-          'currency': 'BRL',
-          'transaction_id': ''
-        });
-        setTimeout(() => { window.location.href = url; }, 300);
-        return false;
-      }
-    </script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PP9HH9T6');</script>
+<!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JRTC3VCW2D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-JRTC3VCW2D');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicoterapia Online - Agende sua 1ª Sessão | Thiago Dantas</title>
@@ -588,6 +581,10 @@
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PP9HH9T6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -751,9 +748,8 @@
                     Realizamos <strong>apenas atendimentos online</strong> (todo o Brasil)
                 </li>
             </ul>
-            <a href="https://api.whatsapp.com/send/?phone=5579996037276&text=Ol%C3%A1%2C+quero+agendar+uma+consulta&type=text&app_absent=0" 
-               class="btn btn-primary btn-modal"
-               onclick="gtag_report_conversion(this.href); return false;">
+            <a href="https://api.whatsapp.com/send/?phone=5579996037276&text=Ol%C3%A1%2C+quero+agendar+uma+consulta&type=phone_number&app_absent=0" 
+               class="btn btn-primary btn-modal">
                 Continuar para o WhatsApp
             </a>
         </div>
@@ -838,6 +834,14 @@
                 modal.style.display = "none";
             }
         }
+        
+        // Diminuir contador quando alguém clica no botão do modal
+        document.querySelector('.btn-modal').addEventListener('click', () => {
+            if(count > 0) count--;
+            counterElement.innerHTML = `<p style="margin-top: 15px; color: var(--destaque); font-weight: bold;">
+                <i class="fas fa-bolt"></i> Ofertas restantes hoje: ${count}
+            </p>`;
+        });
         
         // Scroll suave para a oferta (ATUALIZADO para #sessao-hoje)
         document.querySelector('a[href="#sessao-hoje"]').addEventListener('click', function(e) {
